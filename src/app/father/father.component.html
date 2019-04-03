@@ -1,2 +1,2 @@
-<app-child [input]="input"></app-child>
+<app-child (nameEvent)="nameEventHander($event)"></app-child>
 <button (click)="getData()"> click here </button>

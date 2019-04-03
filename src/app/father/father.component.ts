@@ -7,15 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FatherComponent implements OnInit {
 
-  input: string;
+  userName = '';
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  nameEventHander($event: any) {
+    this.userName = $event;
+  }
+
   getData() {
-    console.log(this.input);
+    console.log(this.userName);
   }
 
 }
