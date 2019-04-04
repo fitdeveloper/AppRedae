@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Test} from '../TEST/Test';
 
 @Component({
   selector: 'app-father',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class FatherComponent implements OnInit {
 
   userName = '';
+  test: Test;
 
   constructor() { }
 
@@ -15,11 +17,11 @@ export class FatherComponent implements OnInit {
   }
 
   nameEventHander($event: any) {
-    this.userName = $event;
+    this.test = $event;
   }
 
   getData() {
-    console.log(this.userName);
+    console.log(this.test);
   }
 
 }
